@@ -44,8 +44,8 @@ int main() {
 
     total = salary * hour ;
     printf( "Expected Output:\n" ) ;
-    printf( "Employees ID = %s \n", id ) ;
-    printf( "Salary = U$ %0.2f", total) ;
+    printf( "Employees ID = %s \n",id ) ;
+    printf( "Salary = U$ %0.2f",total) ;
 
     return 0 ;
 
