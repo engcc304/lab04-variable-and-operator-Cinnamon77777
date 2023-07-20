@@ -34,15 +34,15 @@ int main() {
     float total ;
 
     printf( "Input the Employees ID(Max. 10 chars):\n") ;
-    scanf( "%s", &id ) ;
+    scanf( "%s",&id ) ;
 
     printf( "Input the working hrs:\n" ) ;
-    scanf( "%f", &hour ) ;
+    scanf( "%f",&hour ) ;
 
     printf( "Salary amount/hr:\n" ) ;
-    scanf( "%f" , &salary ) ;
+    scanf( "%f",&salary ) ;
 
-    total = salary * hour ;
+    total = salary*hour ;
     printf( "Expected Output:\n" ) ;
     printf( "Employees ID = %s \n",id ) ;
     printf( "Salary = U$ %0.2f",total) ;
