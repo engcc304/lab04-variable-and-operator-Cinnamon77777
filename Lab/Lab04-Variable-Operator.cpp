@@ -28,25 +28,26 @@
 #include <stdio.h>
 
 int main() {
-    char id[10] ;
-    float hour ;
-    float salary ;
-    float total ;
+    char employeeID[11];
+    int workingHours;
+    float salaryPerHour;
 
-    printf( "Input the Employees ID(Max. 10 chars):\n") ;
-    scanf( "%s",&id ) ;
+    // รับข้อมูลจากผู้ใช้
+    printf("Input the Employees ID(Max. 10 chars): ");
+    scanf("%s", employeeID);
+    
+    printf("Input the working hrs: ");
+    scanf("%d", &workingHours);
+    
+    printf("Salary amount/hr: ");
+    scanf("%f", &salaryPerHour);
 
-    printf( "Input the working hrs:\n" ) ;
-    scanf( "%f",&hour ) ;
+    // คำนวณรายได้ทั้งหมด
+    float totalSalary = workingHours * salaryPerHour;
 
-    printf( "Salary amount/hr:\n" ) ;
-    scanf( "%f",&salary ) ;
+    // แสดงผลลัพธ์
+    printf("\nEmployees ID = %s\n", employeeID);
+    printf("Salary = U$ %.2f\n", totalSalary);
 
-    total = salary*hour ;
-    printf( "Expected Output:\n" ) ;
-    printf( "Employees ID = %s \n",id ) ;
-    printf( "Salary = U$ %0.2f",total) ;
-
-    return 0 ;
-
-}//end main function
+    return 0;
+}
